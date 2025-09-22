@@ -1,0 +1,24 @@
+using System;
+
+// Define the Octopus class
+public class Octopus
+{
+    // Properties (characteristics)
+    public string Name { get; set; }
+    public string Color { get; set; }
+    public int ArmCount { get; }
+
+    // Constructor to initialize a new instance of the Octopus class
+    public Octopus(string name, string color)
+    {
+        Name = name;
+        Color = color;
+        ArmCount = 8; // A defining characteristic for all octopus instances
+    }
+
+    // Method (action)
+    public void Speak()
+    {
+        Console.WriteLine($"Hello, I am {Name}, a {Color} octopus!");
+    }
+}
